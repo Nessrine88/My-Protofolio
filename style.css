@@ -163,6 +163,29 @@ header ul a {
   flex-wrap: wrap;
 }
 
+.skill-list li {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 8px;
+  color: #36b37e;
+  flex-wrap: wrap;
+  margin: 5px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.flex-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  size: 50px;
+}
+
 .project-information ul li {
   margin: 2px;
   background-color: ##ebf0ee;
@@ -204,6 +227,92 @@ button:hover {
   width: 70px;
   background-color: #36b37e;
   border-radius: 20px;
+}
+
+.flex-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.my-skills {
+  background-color: rgb(228, 228, 228);
+  height: 316px;
+  width: 327px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.my-skills h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  position: relative;
+  bottom: 25px;
+}
+
+.my-skills img {
+  margin-top: 40px;
+}
+
+.skill-list {
+  list-style: none;
+  justify-content: first baseline;
+  align-items: center;
+  display: flex;
+  margin: 2px;
+  flex-wrap: wrap;
+}
+
+.about-me {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  color: #172b4d;
+}
+
+.about-me button {
+  height: 48px;
+  width: 153px;
+  left: 99px;
+  top: 290px;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: #36b37f;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.about-me p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
 }
 
 @media all and (max-width: 768px) {
