@@ -18,11 +18,12 @@ body {
 
 .background {
   height: 8000px;
-  width: 380px;
   display: flex;
   flex-direction: column;
   background-color: white;
   align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
 }
 
 .container {
@@ -112,6 +113,21 @@ header ul a {
   background-size: cover;
 }
 
+.work-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.my-recent-work {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
 .my-work {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
@@ -119,9 +135,21 @@ header ul a {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-  flex-wrap: wrap;
   padding-bottom: 50px;
   margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .card {
