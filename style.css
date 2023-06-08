@@ -18,12 +18,13 @@ body {
 
 .background {
   height: 8000px;
+  width: auto;
   display: flex;
   flex-direction: column;
   background-color: white;
   align-items: center;
   flex-wrap: wrap;
-  width: fit-content;
+  margin: 20px;
 }
 
 .container {
@@ -83,7 +84,8 @@ span {
 
 .social-media ul {
   width: 100%;
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
 }
@@ -113,14 +115,6 @@ header ul a {
   background-size: cover;
 }
 
-.work-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .my-recent-work {
   display: flex;
   flex-wrap: wrap;
@@ -133,7 +127,7 @@ header ul a {
   font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 72px;
   text-align: center;
   padding-bottom: 50px;
   margin-top: 70px;
@@ -150,6 +144,7 @@ header ul a {
   justify-content: center;
   align-items: center;
   align-content: center;
+  display: flex;
 }
 
 .card {
@@ -396,11 +391,23 @@ button:hover {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  display: flexbox;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form input {
   height: 48px;
-  width: 327px;
+  width: auto;
   margin-top: 24px;
   border-radius: 4px;
   border: #d0d9d4 solid;
@@ -408,10 +415,15 @@ button:hover {
   font-size: 15px;
   line-height: 24px;
   padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 textarea {
-  width: 318px;
+  display: flexbox;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin-top: 24px;
   border-color: #36b37e;
   padding-left: 30px;
@@ -478,30 +490,28 @@ textarea {
 }
 
 .track-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 20px;
-  justify-content: center;
-  align-items: center;
 }
 
 .track-buttons a {
   padding: 0;
+  margin-top: 20px;
 }
 
 .btn1 {
-  grid-column: 1/3;
   height: 50px;
 }
 
 .btn2 {
-  grid-column: 2/3;
   height: 50px;
   width: 100px;
 }
 
-.track {
+.track img {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 20px;
 }
